@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <script src="script.js" type="text/javascript"></script>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <form id="cadOrçamento" action="destino.html" onsubmit="return enviar()">
+        <fieldset>
+            <legend>
+                Orçamento
+            </legend>
+            <label>
+                Nome*
+                <input type="text" id="txtnom" maxlength="40" size="40">
+            </label>
+            <label>
+                Sobrenome*
+                <input type="text" id="txtsob" maxlength="50" size="60">
+            </label>
+            <br />
+            <label>
+                Email*
+                <input type="text" id="txtemail" maxlength="45" size="30">
+            </label>
+            <label>
+                Telefone*
+                <input type="text" id="txttel" maxlength="45" size="20">
+            </label>
+            <label>
+                Número de Convidados*
+                <input type="text" id="txtconv" maxlength="5" size="10">
+            </label>
+            <br />
+            <label class="selecao">
+                Tipo de Evento*
+                <input type="radio" id="radev" value="e" name="rad"> Casamento
+                <input type="radio" id="radev" value="d" name="rad"> Debutante
+                <input type="radio" id="radev" value="a" name="rad"> Aniversário
+                <input type="radio" id="radev" value="b" name="rad"> Bodas
+                <input type="radio" id="radev" value="bar-bat" name="rad"> Bar/bat mitzvah
+            </label><br />
+            <br />
+            <label>
+                Me interesso pelo espaço de:* <br />
+                <select id="selec">
+                    <option id="selop" value="x" selected="select">Selecione</option>
+                    <option id="selop" value="G">Garden - Evento no Campo</option>
+                    <option id="selop" value="L">Lounge - Evento na Cidade (rústico chique)</option>
+                    <option id="selop" value="V">Village - Evento na Cidade (moderno)</option>
+                </select>
+            </label> <br />
+            <br />
+            <label>
+                Mensagem* <br>
+                <textarea id="txtarea" rows="5" cols="100">
+
+                </textarea>
+                <br />
+            </label>
+
+            <input type="submit" value="Enviar" id="botoes">
+            <input type="reset" value="Resetar" id="botoes">
+        </fieldset>
+    </form>
+</body>
+
+</html>
